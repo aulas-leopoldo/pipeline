@@ -18,11 +18,11 @@ public class VersionController {
     @PostConstruct
     private void printVersion() {
         // easily check version in logs
-        logger.info("You deployed me well! My version is {}", version);
+        logger.info("Tudo certo! Versao {}", version);
     }
 
     @GetMapping("/version")
     public String helloWorld() {
-        return version;
+        return "Current version: "+version;
     }
 }
